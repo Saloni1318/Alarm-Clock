@@ -1,0 +1,197 @@
+/* Global Styles */
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Create a class for flex display */
+  .d-flex {
+    display: flex;
+  }
+  
+  /* Style for buttons */
+  .btn {
+    background-color: rgb(100, 100, 181);
+    color:aqua;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid  rgb(100, 100, 181);
+    border-radius: 30px;
+    
+  }
+  
+  /* Style for select elements */
+  select {
+    appearance: none;
+    outline: none;
+    background-color: rgb(100, 100, 181);
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    
+    margin-right: 8px;
+    cursor: pointer;
+    color:aqua;
+    border-color: black;
+    width: 90px;
+    text-align:center;
+    
+  }
+  
+  /* Create a margin-bottom class */
+  .mb {
+    margin-bottom: 1rem;
+  }
+  /* End Global Styles */
+  
+  /* Styles for the main container */
+  .main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(wall\ clock.jpg);
+  }
+  
+  /* Styles for the clock container */
+  .clock-container {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+   height: 550px;
+    
+    background: linear-gradient(to right, #2c3e50, #fd746c);
+    
+  }
+  .clock-container img{
+    margin-bottom: 40%;
+  }
+  .clock-container h1{
+    font-size: 38px;
+      font-weight: 500;
+      margin: 30px 0;
+    }
+    .clock-container .content {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .content.disable {
+      cursor: no-drop;
+    }
+    .content .column {
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 1px solid #bfbfbf;
+      width: calc(100% / 3 - 5px);
+      background: #5e949b;
+    }
+    .content.disable .column {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .column select {
+      width: 100%;
+      height: 53px;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 19px;
+    }
+  
+  
+  /* Styles for the current time element */
+  .current-time {
+    font-size: 2.5rem;
+    
+    font-weight: bold;
+    margin-top:-35%;
+    color:rgb(80,30,70);
+  }
+  
+  /* Styles for the alarm form */
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+    margin-top:3%;
+   
+  }
+  
+  
+  /* Styles for the set-alarm container */
+  .set-alarm-container {
+    width: 100%;
+  }
+  
+  /* Styles for the title within the set-alarm container */
+  .set-alarm-container .set-alarm-container-title {
+    text-align: center;
+    color:rgb(80,30,70);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  /* Styles for alarm elements */
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 10px 20px;
+    align-items: center;
+    background-color:#7b7373;
+  }
+  
+  /* Styles for the delete alarm button within alarm elements */
+  .alarm .delete-alarm {
+    border-radius: 30px;
+    font-weight: bold;
+    background-color:rgb(79, 79, 199);
+    color: aqua;
+    font-size: 1.2rem;
+  }
+  
+  /* Styles for the time element */
+  .time {
+    color:rgb(80,30,70);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Styles for button hover and focus states */
+  .btn:hover {
+    box-shadow: 2px 2px 5px 2px white;
+  }
+  
+  /* Styles for the page title */
+  .page-title {
+    background-color:gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 2rem;
+  }
+  
+  /* Styles for devices with screen size greater than or equal to 600px */
+  @media only screen and (min-width: 600px) {
+    /* Add padding to the main container */
+    .main-container {
+        padding: 2rem;
+    }
+  
+    /* Adjust styles for clock container */
+    .clock-container {
+        justify-content: center;
+        border-radius: 50px;
+        width: 600px;
+        min-height: auto;
+    }
+    .clock-container:hover{
+        
+        background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    }
+  }
+  
