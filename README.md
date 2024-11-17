@@ -18,7 +18,9 @@ Getting Started
 
 # Navigate to the project directory:
 bash
+
 Copy code
+
 cd alarm-clock
 
 Open the index.html file in your preferred web browser.
